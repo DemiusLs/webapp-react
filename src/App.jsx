@@ -3,6 +3,7 @@ import GuestLayout from "../Layouts/GuestLayout"
 import Home from "../pages/Home"
 import MoviesPage from "../pages/MoviesPage"
 import SingleMoviePage from "../pages/SingleMoviePage"
+import "bootstrap/dist/css/bootstrap.min.css"
 
 
 
