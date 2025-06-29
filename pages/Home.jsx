@@ -18,7 +18,7 @@ const Home = () => {
                     </div>
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <img src="https://placehold.co/1500x400?text=Placeholer+1" className="d-block w-100" alt="..." />
+                            <img src="./BannerMovies.png" className="d-block w-100" alt="..." />
                         </div>
                         <div className="carousel-item">
                             <img src="https://placehold.co/1500x400?text=Placeholer+2" className="d-block w-100" alt="..." />
