@@ -17,7 +17,7 @@ function App() {
           <Route element={<GuestLayout />}>
             <Route path="/" element={<Home />} />
             <Route path="/movies" element={<MoviesPage />} />
-            <Route path="/movies/:id" element={<SingleMoviePage />} />
+            <Route path="/movies/:slug" element={<SingleMoviePage />} />
 
           </Route>
 
