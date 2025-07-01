@@ -1,3 +1,4 @@
+import Stars from "../Stars";
 
 
 const ReviewCard = ({ review }) => {
@@ -5,7 +6,7 @@ const ReviewCard = ({ review }) => {
     return (
         <div className="card">
             <div className="card-header">
-                vote:  vote={vote}
+                <Stars vote={vote} />
             </div>
             <div className="card-body">
                 <figure>

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import BackButton from "../components/BackButton"
 import ReviewsList from "../components/reviews/ReviewsList"
+import Stars from '../components/Stars'
 
 import axios from "axios";
 import { useParams } from "react-router-dom";
@@ -47,7 +48,7 @@ const SingleMoviePage = () => {
                             {movie.title} - {movie.director}
                         </h1>
                         <div className="text-center mb-4">
-                            vote={movie.avg_vote}
+                            <Stars vote={movie.avg_vote} />
                         </div>
                         <p className="text-center">{movie.abstract}</p>
                     </section>
