@@ -3,6 +3,7 @@ import GuestLayout from "../Layouts/GuestLayout"
 import Home from "../pages/Home"
 import MoviesPage from "../pages/MoviesPage"
 import SingleMoviePage from "../pages/SingleMoviePage"
+import CreateBook from "../pages/CreateBook"
 
 
 
@@ -16,9 +17,11 @@ function App() {
         <Routes>
           <Route element={<GuestLayout />}>
             <Route path="/" element={<Home />} />
-            <Route path="/movies" element={<MoviesPage />} />
-            <Route path="/movies/:slug" element={<SingleMoviePage />} />
-
+            <Route path="/movies">
+              <Route path="" element={<MoviesPage />} />
+              <Route path=":slug" element={<SingleMoviePage />} />
+              <Route path="create" element={<CreateBook />} />
+            </Route>
           </Route>
 
         </Routes>

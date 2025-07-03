@@ -14,9 +14,14 @@ const AppHeader = () => {
             url: "/movies",
         },
 
+        {
+            title: "Create",
+            url: "/movies/create",
+        },
+
     ]
 
-    console.log(headerLinks)
+
 
     return (
 
@@ -42,7 +47,7 @@ const AppHeader = () => {
 
                             )}
 
-                            
+
 
                         </ul>
                     </div>
